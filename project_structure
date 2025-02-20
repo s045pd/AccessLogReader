@@ -1,0 +1,17 @@
+reader/
+├── reader/
+│   ├── __init__.py
+│   ├── analyzer.py
+│   ├── app.py
+│   ├── components.py
+│   ├── cli.py
+│   ├── data/
+│   │   └── IP2LOCATION-LITE-DB11.BIN
+│   └── utils/
+│       ├── __init__.py
+│       └── generator.py
+├── README.md
+├── setup.py
+├── pyproject.toml
+├── requirements.txt
+└── .gitignore 
