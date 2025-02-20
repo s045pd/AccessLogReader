@@ -10,7 +10,7 @@ setup(
     },
     # 添加示例文件
     data_files=[
-        ("example", ["example/access.log"]),
+        ("example", ["example/demo_access.log"]),
     ],
     install_requires=[
         "streamlit>=1.31.0",
