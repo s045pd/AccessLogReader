@@ -8,7 +8,7 @@ from plotly.subplots import make_subplots
 from streamlit_folium import folium_static
 import numpy as np
 
-from reader.utils import (
+from v2log.utils import (
     calculate_statistics,
     format_dataframe_for_display,
     get_map_markers,

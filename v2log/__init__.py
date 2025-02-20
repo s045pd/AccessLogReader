@@ -2,9 +2,9 @@
 
 __version__ = "0.1.0"
 
-from reader.analyzer import IPAnalyzer
-from reader.utils import filter_dataframe
-from reader.components import (
+from v2log.analyzer import IPAnalyzer
+from v2log.utils import filter_dataframe
+from v2log.components import (
     create_refresh_button,
     display_data_and_map,
     display_statistics,

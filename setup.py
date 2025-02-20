@@ -1,14 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="log-reader",
+    name="v2log",
     version="0.1.0",
     packages=find_packages(),
     include_package_data=True,
     package_data={
-        "reader": [
-            "data/IP2LOCATION-LITE-DB11.BIN"
-        ],  # 包含reader包内的数据文件
+        "v2log": ["data/IP2LOCATION-LITE-DB11.BIN"],  # 包含v2log包内的数据文件
     },
     # 添加示例文件
     data_files=[
@@ -25,7 +23,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "reader=reader.cli:main",
+            "v2log=v2log.cli:main",
         ],
     },
     author="s045pd",
@@ -33,7 +31,7 @@ setup(
     description="A visualization tool for access log analysis",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/s045pd/log-reader",
+    url="https://github.com/s045pd/v2log",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

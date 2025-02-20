@@ -3,13 +3,15 @@ from pathlib import Path
 
 import streamlit as st
 
-from reader.analyzer import IPAnalyzer
-from reader.components import (
+from v2log.analyzer import IPAnalyzer
+from v2log.components import (
+    BatchUpdateHandler,
+    ProgressComponents,
     create_refresh_button,
     display_data_and_map,
     display_statistics,
 )
-from reader.utils import filter_dataframe
+from v2log.utils import filter_dataframe
 
 st.set_page_config(page_title="访问日志分析器", layout="wide")
 

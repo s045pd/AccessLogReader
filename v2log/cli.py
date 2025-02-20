@@ -9,7 +9,7 @@ import streamlit.web.cli as stcli
 # 添加父目录到 Python 路径
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from reader.utils.generator import create_demo_log  # noqa: E402
+from v2log.utils.generator import create_demo_log
 
 # 获取包内data目录
 DEFAULT_DB_PATH = Path(__file__).parent / "data" / "IP2LOCATION-LITE-DB11.BIN"
@@ -49,10 +49,10 @@ def main(
         os.environ["READER_FILTER"] = filter
 
     # 启动Streamlit应用
-    import reader.app
+    import v2log.app
 
     # 获取 reader.app 模块的路径
-    app_path = Path(reader.app.__file__).absolute()
+    app_path = Path(v2log.app.__file__).absolute()
 
     # 使用 streamlit cli 启动
     sys.argv = ["streamlit", "run", str(app_path)]
