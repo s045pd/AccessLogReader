@@ -20,6 +20,7 @@ setup(
         "IP2Location>=8.10.0",
         "numpy>=1.24.0",
         "click>=8.0.0",
+        "streamlit-folium>=0.12.0",
     ],
     entry_points={
         "console_scripts": [
